@@ -5,415 +5,452 @@
      Portfolio
     </title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <style>
-      body{
-        padding:0px;
-        margin: 0px;
-      }
-      .header{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height:90px
-       
-      }
-      .profile{
-        display: flex;
-       
-      }
-      .img{
-        border-radius: 100px;
-        margin-top: 33px;
-        margin-left: 40px;
-        margin-bottom: 30px;
-      }
-      .img-name{
-        margin-left: 20px;
-        margin-top: 50px;
-        font-family: Arial, Helvetica, sans-serif;
-        font-weight: bold;
-        letter-spacing:1px;
-      }
-
-      .header-menu{
-        flex:1;
-        display: flex;
-        gap:60px;
-        margin-left: 750px;
-        margin-right: 50px;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 17px;
-        font-weight: bold;
-        margin-top: 40px;
-        margin-bottom: 30px;
-      }
-      .home-section{
-            background: linear-gradient(to right, rgba(0, 98, 185, 0.8), rgba(0, 98, 185, 0.8)), url(https://excelrfs.netlify.app/assets/svg/common-bg.svg);
-             height: 650px;
-             margin-left: 0;
-             margin-top: 15px;
-           
-        }
-       .home-info{
-        text-align: center;
-        padding: 100px;
-      
-       }
-       .home-info1{
-        color: white;
-        font-size: 40.32px;
-        font-family: "Source Sans Pro",sans-serif;
-
-       }
-       .home-info2{
-        color: white;
-        font-size: 22px;
-        font-family: "Source Sans Pro",sans-serif;
-        width: 900px;
-       margin-left: 195px;
-       line-height: 30px;
-
-       }
-       .project-btn{
-       padding: 16px 78px; 
-       background-color: white;
-       border-color: white;
-       border-radius: 5px;
-       font-size: 20px;
-       letter-spacing: 2px;
-       font-family: "Source Sans Pro",sans-serif;
-       font-weight: 700;
-       margin-top: 24px;
-
-       }
-       .social-media-icons{
-        position: absolute;
-        top: 50%;
-        border: 2px solid #eee;
-        border-left: 2px solid #eee;
-        transform: translateY(-50%);
-        margin-top: 30px;
-        margin-left: 2px;
-       }
-       .social-icon{
-        width: 29px;
-        height: 30px;
-       }
-       .social-icon-link{
-       
-        width: 53%;
-    display: block;
-    padding: 1.0rem;
-    border-bottom: 2px solid #eee;
-    transition: background .3s;
-       }
-       .media-icon{
-        width: 4rem;
-       }
-       
-      
-.head{
-  background-color: rgba(128, 128, 128, 0.09);
-  height:600px;
+    <link rel="stylesheet" href="styles.css">
+ <style>
+  body{
+  padding:0px;
+  margin: 0px;
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width:100%;
+  height: 90px;
+  position:fixed;
+  background: white;
   
 }
-.me-desc{
-  margin-top: 100px;
-  text-align: center;
+.profile{
+  display: flex;
  
 }
+.img{
+  border-radius: 100px;
+  margin-top: 33px;
+  margin-left: 40px;
+  margin-bottom: 30px;
+}
+.img-name{
+  margin-left: 20px;
+  margin-top: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  letter-spacing:1px;
+}
+
+.header-menu{
+  flex:1;
+  display: flex;
+  gap:60px;
+  margin-left: 750px;
+  margin-right: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+ 
+  margin-bottom: 30px;
+}
+.header-menu:hover{
+  cursor: pointer; 
+}
+.home-section{
+      background: linear-gradient(to right, rgba(0, 98, 185, 0.8), rgba(0, 98, 185, 0.8)), url(https://excelrfs.netlify.app/assets/svg/common-bg.svg);
+       height: 650px;
+       margin-left: 0;
+       
+     
+  }
+ .home-info{
+  text-align: center;
+  padding: 100px;
+
+ }
+ .home-info1{
+  color: white;
+  font-size: 40.32px;
+  font-family: "Source Sans Pro",sans-serif;
+
+ }
+ .home-info2{
+  color: white;
+  font-size: 22px;
+  font-family: "Source Sans Pro",sans-serif;
+  width: 900px;
+ margin-left: 195px;
+ line-height: 30px;
+
+ }
+ .project-btn{
+ padding: 16px 78px; 
+ background-color: white;
+ border-color: white;
+ border-radius: 5px;
+ font-size: 20px;
+ letter-spacing: 2px;
+ font-family: "Source Sans Pro",sans-serif;
+ font-weight: 700;
+ margin-top: 24px;
+
+ }
+ .project-btn:hover{
+  cursor:pointer;
+ }
+ .social-media-icons{
+  position: absolute;
+  top: 50%;
+  border: 2px solid #eee;
+  border-left: 2px solid #eee;
+  transform: translateY(-50%);
+  margin-top: 30px;
+  margin-left: 2px;
+ }
+ .social-icon{
+  width: 29px;
+  height: 30px;
+ }
+ .social-icon-link{
+ 
+width: 40%;
+display: block;
+padding: 1.0rem;
+border-bottom: 2px solid #eee;
+transition: background .3s;
+ }
+ .media-icon{
+  width: 3.2rem;
+ }
+ 
+
+.head{
+background-color: rgba(128, 128, 128, 0.09);
+height:600px;
+
+}
+.me-desc{
+margin-top: 100px;
+text-align: center;
+
+}
 .heading{
-  font-size: 40px;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 30px;
-  letter-spacing: 2px;
+font-size: 40px;
+font-family: 'Source Sans Pro', sans-serif;
+font-weight: 30px;
+letter-spacing: 2px;
 }
 .sub-heading{
-  text-align: center;
-  font-size: 20px;
-  font-family: Arial, Helvetica, sans-serif;
-  color:gray;
-  margin-top: 30px;
-  margin-left: 250px;
-  margin-right: 100px;
-  line-height: 1.8;
+text-align: center;
+font-size: 20px;
+font-family: Arial, Helvetica, sans-serif;
+color:gray;
+margin-top: 30px;
+margin-left: 250px;
+margin-right: 100px;
+line-height: 1.8;
 }
 
 .container-section{
-  margin-left: 150px;
-  margin-top: 70px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+margin-left: 150px;
+margin-top: 70px;
+display: grid;
+grid-template-columns: 1fr 1fr;
 }
 .get-to-know{
-  font-family: 'Source Sans Pro', sans-serif; 
-  font-size: 20px;
+font-family: 'Source Sans Pro', sans-serif; 
+font-size: 20px;
 }
 .contact{
-  margin-top: 40px;
-  background: #0062b9;
-  border:none;
-  color:white;
-  padding:20px;
-  border-radius: 5px;
-  width:150px;
-  font-size: 17px;
-  letter-spacing: 2px;
-  font-weight: bold;
-  height:10px;
-  text-align: center;
-  padding-bottom: 30px;
+margin-top: 40px;
+background: #0062b9;
+border:none;
+color:white;
+padding:20px;
+border-radius: 5px;
+width:150px;
+font-size: 17px;
+letter-spacing: 2px;
+font-weight: bold;
+height:10px;
+text-align: center;
+padding-bottom: 35px;
+
 }
 .skills-section{
- margin-left: 100px; 
- font-family: 'Source Sans Pro', sans-serif; 
- 
+margin-left: 100px; 
+font-family: 'Source Sans Pro', sans-serif; 
+
 }
 .para{
-  margin-top: 40px;
-  font-size: 20px;
-  color:grey;
- 
+margin-top: 40px;
+font-size: 20px;
+color:grey;
+
 }
 .skill{
-  background: rgba(153, 153, 153, 0.2);
-    border-radius: 5px;
-    display:inline-block;
-    margin-top: 40px;
-    color:grey;
-    padding: 15px;
-    width:60px;
-    text-align: center;
-    font-weight: bold;
-    margin-right: 15px;
-    margin-top: 15px;
+background: rgba(153, 153, 153, 0.2);
+border-radius: 5px;
+display:inline-block;
+margin-top: 40px;
+color:grey;
+padding: 15px;
+width:60px;
+text-align: center;
+font-weight: bold;
+margin-right: 15px;
+margin-top: 15px;
 }
 .h2{
-  font-family: Arial, Helvetica, sans-serif;
-  letter-spacing: 2px;
-  font-size: 35px;
-  text-align: center;
-  font-weight: bold;
+font-family: Arial, Helvetica, sans-serif;
+letter-spacing: 2px;
+font-size: 35px;
+text-align: center;
+font-weight: bold;
 
 }
 .p1{
-  margin-top: 30px;
-  color:grey;
-  font-size: 20px;
-  font-family: Arial, Helvetica, sans-serif;
-  margin-left: 250px;
+margin-top: 30px;
+color:grey;
+font-size: 20px;
+font-family: Arial, Helvetica, sans-serif;
+margin-left: 250px;
+
 }
 .d1{
-  color:grey;
-  font-size: 20px;
-  font-family: Arial, Helvetica, sans-serif;
-  margin-left: 280px;
-  line-height: 1.6;
+color:grey;
+font-size: 20px;
+font-family: Arial, Helvetica, sans-serif;
+margin-left: 280px;
+line-height: 1.6;
 }
 
 .section{
-  display: grid;
-  grid-template-columns: 1.5fr 1.5fr;
-}
-.project-img{
-  margin-left: 140px;
-  margin-top: 100px;
-  margin-right: 0px;
-}
-.project1{
-font-family: Arial, Helvetica, sans-serif;
-font-size: 25px;
-margin-top: 200px;
-margin-left: 0px;
-font-weight: bold;
-}
-.website{
-  margin-top: 20px;
-  color:grey;
-  font-size: 18px;
-  font-family: Arial, Helvetica, sans-serif;
-  margin-left: 280px;
-  line-height: 1.6;
-  margin-left: 0px;
-}
-.case{
-  margin-top: 40px;
- font-family: Arial, Helvetica, sans-serif;
- font-weight: bold;
- border:none;
- color:white;
- background-color: #0062b9; 
- border-radius: 10px;
- width:180px;
- height:35px;
- text-align: center;
- padding-top: 10px;
- font-size: 15px;
+display: grid;
+grid-template-columns: 1fr 2fr;
 
 }
+.project-img1,.project-img2,.project-img3{
+margin-left: 150px;
+margin-top: 100px;
+margin-right: 0px;
+margin-bottom: 50px;
+}
+.project1,.project2,.project3{
+display: flex;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 25px;
+margin-right: 50px;
+margin-left: 50px;
+font-weight: bold;
+}
+.project1{
+  margin-top: 170px;
+}
+.project2{
+  margin-top: 180px;
+}
+.project3{
+  margin-top: 200px;
+  
+}
+
+
+.website{
+margin-top: 20px;
+color:grey;
+font-size: 18px;
+font-family: Arial, Helvetica, sans-serif;
+margin-left: 200px;
+line-height: 1.6;
+margin-left: 0px;
+max-width:60rem ;
+}
+.case{
+margin-top: 40px;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: bold;
+border:none;
+color:white;
+background-color: #0062b9; 
+border-radius: 5px;
+width:180px;
+height:35px;
+text-align: center;
+padding-top: 20px;
+font-size: 15px;
+margin-left: 50px;
+}
+.case:hover{
+  cursor:pointer;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
 .con-info{
-  background: linear-gradient(to right, rgba(0, 98, 185, 0.8), rgba(0, 98, 185, 0.8)) center center, url(	https://excelrfs.netlify.app/assets/svg/common-bg.svg);
-  height:1170px;
+background: linear-gradient(to right, rgba(0, 98, 185, 0.8), rgba(0, 98, 185, 0.8)) center center, url(	https://excelrfs.netlify.app/assets/svg/common-bg.svg);
+height:1170px;
 }
 .info-desc{
-  text-align: center;
-  font-size: 35px;
-  color:white;
-  font-family: Arial, Helvetica, sans-serif;
-  letter-spacing: 2px;
-  font-weight: bold;
-  
-  padding-top: 100px;
- 
+text-align: center;
+font-size: 35px;
+color:white;
+font-family: Arial, Helvetica, sans-serif;
+letter-spacing: 2px;
+font-weight: bold;
+
+padding-top: 100px;
+
 }
 .collab{
-  margin-left: 350px;
-  margin-top: 50px;
-  color: white;
-  font-size: 20px;
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.6;
+margin-left: 350px;
+margin-top: 50px;
+color: white;
+font-size: 20px;
+font-family: Arial, Helvetica, sans-serif;
+line-height: 1.6;
 }
 .detail-info{
-  margin-top:80px ;
-  border:none;
-  width:800px;
-  height:800px;
-  background-color: white;
-  margin-left: 350px;
-  border-radius: 5px;
+margin-top:80px ;
+border:none;
+width:800px;
+height:800px;
+background-color: white;
+margin-left: 350px;
+border-radius: 5px;
 
 }
 .enter1{
-  border:none;
-  margin-top: 10px;
-  width:600px;
-  height:50px;
-  background-color: rgba(128, 128, 128, 0.093);
-  color:rgba(128, 128, 128, 0.37);
-  font-size: 15px;
-  border-radius: 10px;
-  padding-left: 10px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
-  margin-left: 30px;
+border:none;
+margin-top: 10px;
+width:600px;
+height:50px;
+background-color: rgba(128, 128, 128, 0.093);
+color:#333;
+font-size: 15px;
+border-radius: 10px;
+padding-left: 10px;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: bold;
+margin-left: 30px;
 }
 
 .text-name1{
-  margin-top: 10px;
-  margin-left: 20px;
-  padding-top: 40px;
-  font-family: Arial, Helvetica, sans-serif;
-  color:grey;
-  margin-left: 30px;
-  font-size:12px;
+margin-top: 10px;
+margin-left: 20px;
+padding-top: 40px;
+font-family: Arial, Helvetica, sans-serif;
+color:#333;
+margin-left: 30px;
+font-size:12px;
 
 }
 .text-name{
-  margin-top: 10px;
-  margin-left: 20px;
-  color:grey;
-  margin-left: 30px;
-  padding-top: 40px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size:12px;
+margin-top: 10px;
+margin-left: 20px;
+color:#333;
+margin-left: 30px;
+padding-top: 40px;
+font-family: Arial, Helvetica, sans-serif;
+font-size:12px;
 }
 .enter2{
-  margin-top: 10px;
-  border:none;
-  width:600px;
-  height:250px;
-  background-color: rgba(128, 128, 128, 0.093);
-  color:rgba(128, 128, 128, 0.37);
-  font-size: 15px;
-  border-radius: 10px;
-  padding-left: 10px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
-  margin-left: 30px;
-  
+margin-top: 10px;
+border:none;
+width:600px;
+height:250px;
+background-color: rgba(128, 128, 128, 0.093);
+color:#333;
+font-size: 15px;
+border-radius: 10px;
+padding-left: 10px;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: bold;
+margin-left: 30px;
+
 }
 .submit{
-  width:200px;
-  font-weight: bold;
-  background-color:  #0062b9;
-  color:white;
-  font-family: Arial, Helvetica, sans-serif;
-  border-radius: 5px;
-  text-align: center;
-  padding-top: 20px;
-  padding-bottom: 10px;
-  margin-left: 500px;
-  font-size: 15px;
-  letter-spacing: 2px;
-  margin-top: 35px;
-  margin-bottom: 20px;
-  height:30px;
+width:200px;
+font-weight: bold;
+background-color:  #0062b9;
+color:white;
+font-family: Arial, Helvetica, sans-serif;
+border-radius: 5px;
+text-align: center;
+padding-top: 20px;
+padding-bottom: 10px;
+margin-left: 500px;
+font-size: 15px;
+letter-spacing: 2px;
+margin-top: 35px;
+margin-bottom: 20px;
+height:30px;
+}
+.submit:hover{
+  cursor:point;
 }
 .footer-section{
-  display:grid;
-  grid-template-columns: 1fr 1fr;
-  background-color: black;
-  height:500px;
-  
+display:grid;
+grid-template-columns: 1fr 1fr;
+background-color: black;
+height:500px;
+
 }
 .footer{
-  margin-left: 200px;
+margin-left: 200px;
 }
 .social{
-  color: white;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
-  margin-top: 100px;
-  font-weight:bold ;
-  letter-spacing: 2px;
+color: white;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 20px;
+margin-top: 100px;
+font-weight:bold ;
+letter-spacing: 2px;
 }
 .social-desc{
-  color:white;
-  font-family: Arial, Helvetica, sans-serif;
-  margin-top: 30px;
-  line-height: 1,6;
+color:white;
+font-family: Arial, Helvetica, sans-serif;
+margin-top: 30px;
+line-height: 1,6;
 }
 .media-icons{
-  margin-top: 30px;
-  
-  text-decoration: none;
+margin-top: 30px;
+
+text-decoration: none;
 }
 .media{
-  color: white;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
-  margin-top: 100px;
-  font-weight:bold ;
-  letter-spacing: 2px;
+color: white;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 20px;
+margin-top: 100px;
+font-weight:bold ;
+letter-spacing: 2px;
 
 }
 .social-section{
-  margin-left: 400px;
+margin-left: 400px;
 }
 .icon1{
-  gap: 30px;
+gap: 30px;
 }
 .small-footer{
-  text-align: center;
-  margin-left: 600px;
-  margin-top: 200px;
+text-align: center;
+margin-left: 600px;
+margin-top: 200px;
 }
 .sf{
-  color:white;
-  font-size: 10px;
-  width:300px
+color:white;
+font-size: 10px;
+width:300px
 }
 .copyrights{
-  text-decoration: none;
-  color: white;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 12px;
-  text-decoration: underline;
-  font-weight: bold;
+text-decoration: none;
+color: white;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 12px;
+text-decoration: underline;
+font-weight: bold;
 }
-    </style>
+ </style>
   </head>
   <body>
       <div class="header">
@@ -424,10 +461,12 @@ font-weight: bold;
         <span class="img-name">DEEKSHITHA</span>
       </div>
      <div class="header-menu">
-        <div class="h1">HOME</div>
-        <div class="h1">ABOUT</div>
-        <div class="h1">PROJECTS</div>
-        <div class="h1">CONTACT</div>
+      
+      <a href="#">HOME</a>
+    <a href="#about">ABOUT</a>
+    <a href="#projects">PROJECTS</a>
+    <a href="#contact">CONTACT</a>
+ 
      </div>
     </div>
 
@@ -440,7 +479,7 @@ font-weight: bold;
               <p>Aspiring Front-End developer with a strong foundation in programming and problem-solving,
                    seeking an opportunity to learn new technologies and contribute to innovative projects in a dynamic team environment.</p>
           </div>
-          <button class="project-btn"  > PROJECTS</button>
+      <a href="#prjct">   <button class="project-btn" > PROJECTS</button> </a>
 
       </div>
       <div class="social-media-icons">
@@ -476,12 +515,12 @@ font-weight: bold;
     </div>
     <div class="head">
      <div class="me-desc">
-      <h2 class="heading">
+      <h2 class="heading" id="about">
         ABOUT ME
       </div>
     <div class="sub-heading">
           I am a recent graduate with strong foundation and passionate about front-end developer.
-          I am currently seeking an opportunity in font-end developer, where I can apply my knowledge,contribute to meaningful projects, grow as a developer.
+          I am currently seeking an opportunity in front-end developer, where I can apply my knowledge,contribute to meaningful projects, grow as a developer.
         </div>
         <div class="container">
           <div class="container-section">
@@ -497,16 +536,16 @@ font-weight: bold;
             <div class="skill">HTML</div>
             <div class="skill">CSS</div>
             <div class="skill" style="width:80px">JavaScript</div><br>
+            <div class="skill">ReactJs</div>
             <div class="skill">Java</div>
-            <div class="skill">Python</div>
           </div>
          </div>
          </div>
         </div>
      
        
-      <div class="pro-heading">
-        <h2 class="h2">PROJECTS</h2>
+      <div class="pro-heading" id="prjct">
+        <h2 class="h2" id="projects">PROJECTS</h2>
         <p class="p1">
           Here are some of the projects I've worked on,showing my skills in 
           HTML,CSS,and JavaScript.Each project<br><div class="d1">highlights my ability to
@@ -515,24 +554,53 @@ font-weight: bold;
       </div>
     
      <div class="section">
-      <div class="project-img">
+      <div class="project-img1" >
         <img src="Screenshot 2025-03-09 152753.png" style="width:700px">
+        <img src="Screenshot 2025-03-09 152753.png" style="width:700px ;margin-top: 100px">
+        <img src="Screenshot 2025-03-09 152753.png" style="width:700px;margin-top: 100px"">
+
+
       </div>
+      
+      
       <div class="info">
         <div class="project1">
           Project 1
         </div>
-          <p class="website">The varadhi Website is a well-designed and responsive platform
-           <br>built using HTML,CSS,and JavaScript.It focuses on providing an<br> engaging
-            user experience with clean and modern interface.
+          <p class="website" style="margin-left: 50px;margin-right: 50px">This portfolio is built using clean, semantic HTML and<br> modern 
+            CSS for styling and layout.
+            It showcases my<br> projects with a 
+            responsive, user-friendly design across<br> devices.The goal is to 
+            present my work in a professional<br> and accessible format.
+            user experience with clean and<br> modern interface.
           </p>
           <div class="case">
-            CASE STUDY
+           <a href="casestudy.html" target="_blank" class="casestudy1">CASE STUDY</a>
           </div>
+          <div class="project2">
+            Project 2
+          </div>
+            <p class="website" style="margin-left: 50px;margin-right: 50px">
+              Developed a responsive and visually appealing photography<br> portfolio website using HTML, CSS, and JavaScript. 
+              <br>Implemented dynamic image galleries, interactive contact <br>forms, and integrated social media links to enhance user<br> engagement and accessibility across devices.
+            </p>
+            <div class="case">
+             <a href="casestudy2.html" target="_blank" class="casestudy2"> CASE STUDY</a> 
+            </div>
+            <div class="project3">
+              Project 3
+            </div>
+              <p class="website" style="margin-left: 50px;margin-right: 50px">Developed a deep learning-based system for real-time <br>crime detection using surveillance video streams.
+               <br> Implemented a hybrid CNN-RNN model to analyze visual <br>and temporal patterns of suspicious activities.
+                Integrated <br>with a Django web interface using HTML, CSS, and<br> JavaScript for monitoring and alert visualization.
+              </p>
+              <div class="case">
+                <a href="casestudy3.html" target="_blank" class="casestudy3">CASE STUDY</a>
+              </div>
       </div>
      </div>
      <div class="con-info">
-      <div class="info-desc">
+      <div class="info-desc" id="contact">
         CONTACT
       </div>
       <div class="collab">I'm always open to new opportunities,collaboartions, and discussions in frontend development.<br>
@@ -541,15 +609,15 @@ font-weight: bold;
           <div class="details">
             <div class="text-name1">
               <h3>Name</h3>
-              <input type="text" value="Enter Your Name" class="enter1">
+              <input type="text" placeholder="Enter Your Name" class="enter1">
             </div>
             <div class="text-name1">
               <h3>Email</h3>
-              <input type="text" value="Enter Your Email" class="enter1">
+              <input type="text" placeholder="Enter Your Email" class="enter1">
             </div>
             <div class="text-name">
               <h3>Message</h3>
-              <input type="text" value="Enter Your Message" class="enter2">
+              <input type="text" placeholder="Enter Your Message" class="enter2">
               
             </div>
           </div>
@@ -582,6 +650,7 @@ font-weight: bold;
           <a href="#">
             <img src="	https://excelrfs.netlify.app/assets/png/insta-ico.png" class="icons1" style="width:30px">
           </a>
+          
         </div>
       </div>
       <div class="small-footer">
