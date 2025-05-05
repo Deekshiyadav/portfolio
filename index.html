@@ -11,6 +11,7 @@
   padding:0px;
   margin: 0px;
 }
+
 .header{
   display: flex;
   justify-content: space-between;
@@ -96,6 +97,7 @@
  .project-btn:hover{
   cursor:pointer;
  }
+
  .social-media-icons{
   position: absolute;
   top: 50%;
@@ -155,6 +157,34 @@ margin-top: 70px;
 display: grid;
 grid-template-columns: 1fr 1fr;
 }
+.knowme
+
+ .get-to-know,
+  .skills-section {
+    text-align: center;
+    font-size:16px;
+    padding:10px;
+  }
+  .skill-section h1{
+    font-size:20px;
+  } 
+  .contact {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .pro-heading,
+  .section {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+
 .get-to-know{
 font-family: 'Source Sans Pro', sans-serif; 
 font-size: 20px;
@@ -189,6 +219,7 @@ font-size: 20px;
 color:grey;
 
 }
+
 .skill{
 background: rgba(153, 153, 153, 0.2);
 border-radius: 5px;
@@ -229,13 +260,31 @@ line-height: 1.6;
 .section{
 display: grid;
 grid-template-columns: 1fr 2fr;
-
+gap: 20px;
 }
-.project-img1,.project-img2,.project-img3{
+.project-img1{
+  margin: 100px auto 50px auto;
+  max-width: 700px;
+  display: flex;
 margin-left: 150px;
 margin-top: 100px;
 margin-right: 0px;
 margin-bottom: 50px;
+display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.project-image {
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  display: block;
+}
+.spaced {
+  margin-top: 100px;
+}
+.info {
+  padding: 20px;
 }
 .project1,.project2,.project3{
 display: flex;
@@ -328,7 +377,7 @@ margin-top: 10px;
 width:600px;
 height:50px;
 background-color: rgba(128, 128, 128, 0.093);
-color:#333;
+color:#9a8f8f00;
 font-size: 15px;
 border-radius: 10px;
 padding-left: 10px;
@@ -342,7 +391,7 @@ margin-top: 10px;
 margin-left: 20px;
 padding-top: 40px;
 font-family: Arial, Helvetica, sans-serif;
-color:#333;
+color:#33333396;
 margin-left: 30px;
 font-size:12px;
 
@@ -350,7 +399,7 @@ font-size:12px;
 .text-name{
 margin-top: 10px;
 margin-left: 20px;
-color:#333;
+color:#33333396;
 margin-left: 30px;
 padding-top: 40px;
 font-family: Arial, Helvetica, sans-serif;
@@ -361,8 +410,8 @@ margin-top: 10px;
 border:none;
 width:600px;
 height:250px;
-background-color: rgba(128, 128, 128, 0.093);
-color:#333;
+background-color: rgba(128, 128, 128, 0.125);
+color:#00000016;
 font-size: 15px;
 border-radius: 10px;
 padding-left: 10px;
@@ -438,12 +487,13 @@ gap: 30px;
 .small-footer{
 text-align: center;
 margin-left: 600px;
-margin-top: 200px;
+margin-top: 100px;
 }
 .sf{
 color:white;
 font-size: 10px;
-width:300px
+width:300px;
+
 }
 .copyrights{
 text-decoration: none;
@@ -453,6 +503,273 @@ font-size: 12px;
 text-decoration: underline;
 font-weight: bold;
 }
+/* media queries*/
+@media screen and (max-width:768px){
+  body{
+    padding:0px;
+    margin: 0px;
+    overflow-x: hidden; 
+  }
+  .header-menu{
+    margin-top: 30px;
+  row-gap: 3px;
+  display: grid;
+  margin-left: 110px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+ }
+ .home-info1{
+  font-size: 25px;
+ }
+  .home-info2{
+  margin-left: 0px;
+  width:90%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 18px;
+ line-height: 30px;
+
+  }
+  .social-media-icons{
+    display: none;
+  }
+  .heading{
+    font-size: 35px;
+  }
+  .sub-heading{
+    font-size: 16px;
+    margin-left: 25px;
+    margin-right: 40px;
+  }
+ 
+  .container-section{
+  margin-left: 0px;
+  grid:none;
+ 
+ }
+ .container{
+  margin-left: 0px;
+ }
+.get-to-know{
+  margin-left: 0px;
+ font-size: 15px;
+
+}
+.para{
+  font-size: 16px;
+  margin-left: 16px;
+ }
+.contact{
+  width:170px;
+font-size: 13px;
+ margin-top: 30px; 
+ margin-left: 20px;  
+  
+}
+.knowme{
+  margin-left: 15px;
+}
+.skill-heading{
+  padding-top: 50px;
+}
+.skills-section{
+  margin-left: 0px;
+}
+.skill{
+
+display:inline-block;
+
+width:60px;
+
+margin-right: 15px;
+margin-top: 15px;
+}
+.h2{
+margin-top: 350px;
+font-size: 37px;
+font-family: 'Source Sans Pro', sans-serif;
+font-weight: bold;
+
+}
+.p1,.d1{
+margin-left: 5px;
+font-size: 15px;
+}
+
+.project-img1{
+  width: 470px; 
+  margin-left: 0px;
+
+}
+.project-image { 
+  margin-left: 0px;
+  max-width: 90%;
+  }
+.project1{
+  margin-top: 0px;
+  margin-left: 150px;
+  font-size: 20px;
+}
+.project2{
+  margin-top: 60px;
+  margin-left: 150px;
+  font-size: 20px;
+}
+.project3{
+  margin-top: 60px;
+  margin-left: 150px;
+  font-size: 20px;
+ 
+}
+.website{
+  font-size: 15px;
+  margin-top: 10px;
+  width:400px
+}
+.section{
+  display: flex;
+  flex-direction: column;
+}
+.case{
+  margin-top: 0px;
+  margin-left: 100px;
+}
+  .spaced {
+    margin-top: 50px;
+    
+  }
+ 
+  .collab{
+    margin-left: 25px;
+    font-size: 15px;
+  }
+  .con-info{
+  margin-bottom: 0px;
+  gap:0px;
+  height:1050px;
+  margin-top: 50px;
+}
+.info-desc{
+font-size: 30px;
+  
+}
+.collab{
+margin-left: 25px;
+margin-top: 30px;
+font-size: 15px;
+
+}
+.detail-info{
+width:420px;
+height:650px;
+margin-left: 30px;
+margin-bottom: 0px;
+padding-bottom: 0px;
+}
+
+.enter1{
+margin-top: 0px;
+width:350px;
+height:50px;
+color:#3333335e;
+font-size: 12px;
+margin-left: 0px;
+}
+h3{
+  margin-top: 0px;
+}
+.text-name1{
+margin-top: 0px;
+color:#333333b6;
+margin-left: 30px;
+font-size:12px;
+
+}
+.text-name{
+margin-top: 0px;
+margin-left: 20px;
+color:#333333b6;
+margin-left: 30px;
+font-size:12px;
+
+}
+.enter2{
+margin-top: 0px;
+width:350px;
+height:200px;
+font-size: 12px;
+font-weight: none;
+margin-left: 0px;
+color:#3333335e;
+}
+.submit{
+width:360px;
+padding-top: 15px;
+margin-left: 30px;
+font-size: 15px;
+letter-spacing: 2px;
+margin-top: 25px;
+height:30px;
+}
+.footer-section{
+display: block;
+background-color: black;
+height:400px;
+padding-top: 0px;
+
+}
+.footer{
+margin-left: 0px;
+
+}
+.social{
+font-size: 16px;
+margin-left: 40px;
+padding-top: 60px;
+
+}
+.social-desc{
+  width:400px;
+  margin-left: 40px;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+.media-icons{
+margin-top: 0px;
+margin-left: 40px;
+}
+.media{
+margin-left: 40px;
+font-size: 20px;
+margin-top: 50px;
+
+}
+.social-section{
+margin-left: 0px;
+
+}
+.icon1{
+gap: 30px;
+}
+.small-footer{
+text-align: center;
+margin-left:0px;
+
+}
+.sf{
+
+width:500px;
+
+}
+.copyrights{
+margin-top: 40px;
+
+}
+}
+
+
+
  </style>
   </head>
   <body>
@@ -468,7 +785,7 @@ font-weight: bold;
       <a href="#">HOME</a>
     <a href="#about">ABOUT</a>
     <a href="#projects">PROJECTS</a>
-    <a href="#c">CONTACT</a>
+    <a href="#cntct">CONTACT</a>
  
      </div>
     </div>
@@ -524,14 +841,14 @@ font-weight: bold;
         <div class="container">
           <div class="container-section">
           <div class="get-to-know">
-            <h2>Get to Know me!</h2>
+            <h2 class="knowme">Get to Know me!</h2>
             <p class="para">Hey! It's Deekshitha Boneni, a passionate <strong>Frontend Developer</strong><br> building clean,responsive,and 
               user-friendly websites.I specialize <br>in <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong>,buliding 
               engaging digital experiences.<br>Feelfree to <strong>contact</strong> me here.</p>
             <a href="#cntct"> <button class="contact" >CONTACT</button> </a>
           </div>
           <div class="skills-section">
-            <h1>My Skills</h1>
+            <h1 class="skill-heading">My Skills</h1>
             <div class="skill">HTML</div>
             <div class="skill">CSS</div>
             <div class="skill" style="width:80px">JavaScript</div><br>
@@ -554,9 +871,9 @@ font-weight: bold;
     
      <div class="section">
       <div class="project-img1" >
-        <img src="Screenshot 2025-03-09 152753.png" style="width:700px">
-        <img src="Screenshot 2025-03-09 152753.png" style="width:700px ;margin-top: 100px">
-        <img src="Screenshot 2025-03-09 152753.png" style="width:700px;margin-top: 100px"">
+        <img src="Screenshot 2025-03-09 152753.png"  class="project-image">
+        <img src="Screenshot 2025-03-09 152753.png"  class="project-image spaced">
+        <img src="Screenshot 2025-03-09 152753.png"   style="width:700px" class="project-image spaced">
 
 
       </div>
@@ -634,16 +951,14 @@ font-weight: bold;
       <div class="social-section">
         <div class="media">SOCIAL</div>
         <div class="media-icons">
-          <a href="#">
+          <a href="https://www.linkedin.com/in/deekshitha-boneni-6843b529a/">
             <img src="	https://excelrfs.netlify.app/assets/png/linkedin-ico.png" alt="icon" class="social-icon">
           </a>
-          <a href="#">
+          <a href="https://github.com/">
             <img src="https://excelrfs.netlify.app/assets/png/github-ico.png" class="icons1" style="width:30px">
           </a>
-          <a href="#">
-            <img src="https://excelrfs.netlify.app/assets/png/twitter-ico.png" class="icons1" style="width:30px">
-          </a>
-          <a href="#">
+
+          <a href="https://www.youtube.com/@bonenideekshitha4520">
             <img src="https://excelrfs.netlify.app/assets/png/yt-ico.png" class="icons1" style="width:30px">
           </a>
           <a href="#">
@@ -652,6 +967,7 @@ font-weight: bold;
           
         </div>
       </div>
+
       <div class="small-footer">
         <div class="sf">
          
