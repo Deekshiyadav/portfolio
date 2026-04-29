@@ -9,7 +9,11 @@
  <style>
   body{
   padding:0px;
-  margin: 0px;
+  margin: 0;
+  color: #e2e8f0;
+  display: flex;
+  flex-direction: column;
+  
 }
 
 .header{
@@ -19,13 +23,12 @@
   width:100%;
   height: 90px;
   position:fixed;
-  background: white;
+  background:white ;
   
 }
 .profile{
   display: flex;
- 
-}
+ }
 .img{
   border-radius: 100px;
   margin-top: 33px;
@@ -38,6 +41,7 @@
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   letter-spacing:1px;
+  color: rgb(0, 0, 0);
 }
 
 .header-menu{
@@ -49,17 +53,18 @@
   font-family: Arial, Helvetica, sans-serif;
   font-size: 17px;
   font-weight: bold;
- 
-  margin-bottom: 30px;
+ color: black;
+  margin-bottom: 10px;
 }
 .header-menu:hover{
   cursor: pointer; 
 }
 .home-section{
-      background: linear-gradient(to right, rgba(0, 98, 185, 0.8), rgba(0, 98, 185, 0.8)), url(https://excelrfs.netlify.app/assets/svg/common-bg.svg);
-       height: 650px;
+      background: linear-gradient(-45deg, #1e3c72, #2a5298,#097886, #1e3c72), url(https://excelrfs.netlify.app/assets/svg/common-bg.svg);
+       height: 600px;
        margin-left: 0;
-       
+        background-size: 400% 400%;
+  animation: gradientMove 10s ease infinite;
      
   }
  .home-info{
@@ -73,6 +78,7 @@
   font-family: "Source Sans Pro",sans-serif;
 
  }
+
  .home-info2{
   color: white;
   font-size: 22px;
@@ -92,10 +98,12 @@
  font-family: "Source Sans Pro",sans-serif;
  font-weight: 700;
  margin-top: 24px;
-
+ transition: all 0.3s ease;
  }
  .project-btn:hover{
   cursor:pointer;
+   transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
  }
 
  .social-media-icons{
@@ -105,11 +113,13 @@
   border-left: 2px solid #eee;
   transform: translateY(-50%);
   margin-top: 30px;
-  margin-left: 2px;
+  
+  
  }
  .social-icon{
-  width: 29px;
-  height: 30px;
+  width: 10px;
+  height: 10px;
+  margin-left: -10px;
  }
  .social-icon-link{
  
@@ -120,7 +130,9 @@ border-bottom: 2px solid #eee;
 transition: background .3s;
  }
  .media-icon{
+  
   width: 3.2rem;
+  
  }
  
 
@@ -130,7 +142,7 @@ height:600px;
 
 }
 .me-desc{
-margin-top: 100px;
+margin-top: 120px;
 text-align: center;
 
 }
@@ -139,6 +151,8 @@ font-size: 40px;
 font-family: 'Source Sans Pro', sans-serif;
 font-weight: 30px;
 letter-spacing: 2px;
+color: black;
+scroll-margin-top: 120px;
 }
 .sub-heading{
 text-align: center;
@@ -157,22 +171,26 @@ margin-top: 70px;
 display: grid;
 grid-template-columns: 1fr 1fr;
 }
-.knowme
+.knowme{
+  color: black;
+  font-size:32px;
+  margin-left: -390px;
+}
 
  .get-to-know,
   .skills-section {
     text-align: center;
     font-size:16px;
     padding:10px;
+    color:black;
+    
   }
   .skill-section h1{
     font-size:20px;
   } 
-  .contact {
-    padding: 8px 16px;
-    font-size: 14px;
-  }
-
+ .skill-heading{
+  margin-left: -220px;
+ }
   .pro-heading,
   .section {
     margin-left: 10px;
@@ -191,7 +209,7 @@ font-size: 20px;
 }
 .contact{
 margin-top: 40px;
-background: #0062b9;
+background: #2a5298;
 border:none;
 color:white;
 padding:20px;
@@ -209,10 +227,11 @@ padding-bottom: 35px;
   cursor:pointer;
 }
 .skills-section{
-margin-left: 100px; 
+ 
 font-family: 'Source Sans Pro', sans-serif; 
 
 }
+
 .para{
 margin-top: 40px;
 font-size: 20px;
@@ -239,7 +258,8 @@ letter-spacing: 2px;
 font-size: 35px;
 text-align: center;
 font-weight: bold;
-
+color:black;
+scroll-margin-top: 120px;
 }
 .p1{
 margin-top: 30px;
@@ -268,7 +288,7 @@ gap: 20px;
   display: flex;
 margin-left: 150px;
 margin-top: 100px;
-margin-right: 0px;
+
 margin-bottom: 50px;
 display: flex;
   flex-direction: column;
@@ -293,6 +313,7 @@ font-size: 25px;
 margin-right: 50px;
 margin-left: 50px;
 font-weight: bold;
+color:black;
 }
 .project1{
   margin-top: 170px;
@@ -302,10 +323,7 @@ font-weight: bold;
 }
 .project3{
   margin-top: 200px;
-  
-}
-
-
+  }
 .website{
 margin-top: 20px;
 color:grey;
@@ -322,7 +340,7 @@ font-family: Arial, Helvetica, sans-serif;
 font-weight: bold;
 border:none;
 color:white;
-background-color: #0062b9; 
+background-color: #2a5298; 
 border-radius: 5px;
 width:180px;
 height:35px;
@@ -339,8 +357,9 @@ a{
   color: inherit;
 }
 .con-info{
-background: linear-gradient(to right, rgba(0, 98, 185, 0.8), rgba(0, 98, 185, 0.8)) center center, url(	https://excelrfs.netlify.app/assets/svg/common-bg.svg);
-height:1170px;
+background: linear-gradient(to right, #1e3c72, #2a5298), url(	https://excelrfs.netlify.app/assets/svg/common-bg.svg);
+padding-bottom: 30px;
+
 }
 .info-desc{
 text-align: center;
@@ -349,7 +368,6 @@ color:white;
 font-family: Arial, Helvetica, sans-serif;
 letter-spacing: 2px;
 font-weight: bold;
-
 padding-top: 100px;
 
 }
@@ -377,7 +395,7 @@ margin-top: 10px;
 width:600px;
 height:50px;
 background-color: rgba(128, 128, 128, 0.093);
-color:#9a8f8f00;
+color:#333;
 font-size: 15px;
 border-radius: 10px;
 padding-left: 10px;
@@ -391,7 +409,7 @@ margin-top: 10px;
 margin-left: 20px;
 padding-top: 40px;
 font-family: Arial, Helvetica, sans-serif;
-color:#33333396;
+color:#333333f3;
 margin-left: 30px;
 font-size:12px;
 
@@ -411,7 +429,7 @@ border:none;
 width:600px;
 height:250px;
 background-color: rgba(128, 128, 128, 0.125);
-color:#00000016;
+color:#333;
 font-size: 15px;
 border-radius: 10px;
 padding-left: 10px;
@@ -421,30 +439,36 @@ margin-left: 30px;
 
 }
 .submit{
-width:200px;
+width:500px;
+margin-left: 110px; 
+letter-spacing: 2px;
+height:40px;
+cursor: pointer;
+transition: 0.3s;
 font-weight: bold;
-background-color:  #0062b9;
+background-color:  #2a5298;
 color:white;
 font-family: Arial, Helvetica, sans-serif;
 border-radius: 5px;
 text-align: center;
-padding-top: 20px;
-padding-bottom: 10px;
-margin-left: 500px;
 font-size: 15px;
-letter-spacing: 2px;
 margin-top: 35px;
 margin-bottom: 20px;
-height:30px;
+transition: all 0.3s ease;
+border:none;
 }
 .submit:hover{
   cursor:point;
+  color:black;
+   transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
 .footer-section{
+  margin-top: auto;
 display:grid;
 grid-template-columns: 1fr 1fr;
 background-color: black;
-height:500px;
+position: static;
 
 }
 .footer{
@@ -481,19 +505,25 @@ letter-spacing: 2px;
 .social-section{
 margin-left: 400px;
 }
+.social-icon{
+  width: 40px;
+  height: 30px;
+}
 .icon1{
 gap: 30px;
 }
 .small-footer{
 text-align: center;
 margin-left: 600px;
-margin-top: 100px;
+margin-top: 80px;
+
 }
 .sf{
 color:white;
 font-size: 10px;
 width:300px;
-
+margin-top: -30px;
+margin-bottom: 15px;
 }
 .copyrights{
 text-decoration: none;
@@ -503,274 +533,22 @@ font-size: 12px;
 text-decoration: underline;
 font-weight: bold;
 }
-/* media queries*/
-@media screen and (max-width:768px){
-  body{
-    padding:0px;
-    margin: 0px;
-    overflow-x: hidden; 
-  }
-  .header-menu{
-    margin-top: 30px;
-  row-gap: 3px;
-  display: grid;
-  margin-left: 110px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 15px;
-  font-weight: bold;
- }
- .home-info1{
-  font-size: 25px;
- }
-  .home-info2{
-  margin-left: 0px;
-  width:90%;
-  margin-left: auto;
-  margin-right: auto;
-  font-size: 18px;
- line-height: 30px;
-
-  }
-  .social-media-icons{
-    display: none;
-  }
-  .heading{
-    font-size: 35px;
-  }
-  .sub-heading{
-    font-size: 16px;
-    margin-left: 25px;
-    margin-right: 40px;
-  }
- 
-  .container-section{
-  margin-left: 0px;
-  grid:none;
- 
- }
- .container{
-  margin-left: 0px;
- }
-.get-to-know{
-  margin-left: 0px;
- font-size: 15px;
-
+hr{
+  width: 260%;
+   margin: 10px auto;
+   margin-left: -230px;
 }
-.para{
-  font-size: 16px;
-  margin-left: 16px;
- }
-.contact{
-  width:170px;
-font-size: 13px;
- margin-top: 30px; 
- margin-left: 20px;  
-  
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
-.knowme{
-  margin-left: 15px;
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-50px); }
+  100% { transform: translateY(0); }
 }
-.skill-heading{
-  padding-top: 50px;
-}
-.skills-section{
-  margin-left: 0px;
-}
-.skill{
-
-display:inline-block;
-
-width:60px;
-
-margin-right: 15px;
-margin-top: 15px;
-}
-.h2{
-margin-top: 350px;
-font-size: 37px;
-font-family: 'Source Sans Pro', sans-serif;
-font-weight: bold;
-
-}
-.p1,.d1{
-margin-left: 5px;
-font-size: 15px;
-}
-
-.project-img1{
-  width: 470px; 
-  margin-left: 0px;
-
-}
-.project-image { 
-  margin-left: 0px;
-  max-width: 90%;
-  }
-.project1{
-  margin-top: 0px;
-  margin-left: 150px;
-  font-size: 20px;
-}
-.project2{
-  margin-top: 60px;
-  margin-left: 150px;
-  font-size: 20px;
-}
-.project3{
-  margin-top: 60px;
-  margin-left: 150px;
-  font-size: 20px;
- 
-}
-.website{
-  font-size: 15px;
-  margin-top: 10px;
-  width:400px
-}
-.section{
-  display: flex;
-  flex-direction: column;
-}
-.case{
-  margin-top: 0px;
-  margin-left: 100px;
-}
-  .spaced {
-    margin-top: 50px;
-    
-  }
- 
-  .collab{
-    margin-left: 25px;
-    font-size: 15px;
-  }
-  .con-info{
-  margin-bottom: 0px;
-  gap:0px;
-  height:1050px;
-  margin-top: 50px;
-}
-.info-desc{
-font-size: 30px;
-  
-}
-.collab{
-margin-left: 25px;
-margin-top: 30px;
-font-size: 15px;
-
-}
-.detail-info{
-width:420px;
-height:650px;
-margin-left: 30px;
-margin-bottom: 0px;
-padding-bottom: 0px;
-}
-
-.enter1{
-margin-top: 0px;
-width:350px;
-height:50px;
-color:#3333335e;
-font-size: 12px;
-margin-left: 0px;
-}
-h3{
-  margin-top: 0px;
-}
-.text-name1{
-margin-top: 0px;
-color:#333333b6;
-margin-left: 30px;
-font-size:12px;
-
-}
-.text-name{
-margin-top: 0px;
-margin-left: 20px;
-color:#333333b6;
-margin-left: 30px;
-font-size:12px;
-
-}
-.enter2{
-margin-top: 0px;
-width:350px;
-height:200px;
-font-size: 12px;
-font-weight: none;
-margin-left: 0px;
-color:#3333335e;
-}
-.submit{
-width:360px;
-padding-top: 15px;
-margin-left: 30px;
-font-size: 15px;
-letter-spacing: 2px;
-margin-top: 25px;
-height:30px;
-}
-.footer-section{
-display: block;
-background-color: black;
-height:400px;
-padding-top: 0px;
-
-}
-.footer{
-margin-left: 0px;
-
-}
-.social{
-font-size: 16px;
-margin-left: 40px;
-padding-top: 60px;
-
-}
-.social-desc{
-  width:400px;
-  margin-left: 40px;
-  font-size: 13px;
-  margin-bottom: 20px;
-}
-.media-icons{
-margin-top: 0px;
-margin-left: 40px;
-}
-.media{
-margin-left: 40px;
-font-size: 20px;
-margin-top: 50px;
-
-}
-.social-section{
-margin-left: 0px;
-
-}
-.icon1{
-gap: 30px;
-}
-.small-footer{
-text-align: center;
-margin-left:0px;
-
-}
-.sf{
-
-width:500px;
-
-}
-.copyrights{
-margin-top: 40px;
-
-}
-}
-
-
-
- </style>
+</style>
   </head>
   <body>
       <div class="header">
@@ -782,7 +560,7 @@ margin-top: 40px;
       </div>
      <div class="header-menu">
       
-      <a href="#">HOME</a>
+      <a href="#top">HOME</a>
     <a href="#about">ABOUT</a>
     <a href="#projects">PROJECTS</a>
     <a href="#cntct">CONTACT</a>
@@ -792,6 +570,7 @@ margin-top: 40px;
 
     <div class="home-section">
       <div class="home-info">
+        
           <div class="home-info1">
               <h2>HEY, MY NAME IS DEEKSHITHA BONENI</h2>
           </div>
@@ -805,18 +584,18 @@ margin-top: 40px;
       <div class="social-media-icons">
           <div class="media-icon">
               <a href="https://www.linkedin.com/in/deekshitha-boneni-6843b529a/" target="_blank" class="social-icon-link">
-              <img src="	https://excelrfs.netlify.app/assets/png/linkedin-ico.png" alt="icon" class="social-icon">
+              <img src="https://excelrfs.netlify.app/assets/png/linkedin-ico.png" alt="icon" class="social-icon">
               </a>
           </div>
           <div class="media-icon">
-              <a href="https://github.com/" class="social-icon-link">
+              <a href="https://github.com/" target="_blank" class="social-icon-link" >
               <img src="https://excelrfs.netlify.app/assets/png/github-ico.png" alt="icon" class="social-icon">
               </a>
           </div>
           
           <div class="media-icon">
-              <a href="https://www.youtube.com/@bonenideekshitha4520" class="social-icon-link">
-              <img src="	https://excelrfs.netlify.app/assets/png/yt-ico.png" alt="icon" class="social-icon">
+              <a href="https://www.youtube.com/@bonenideekshitha4520" target="_blank" class="social-icon-link">
+              <img src="https://excelrfs.netlify.app/assets/png/yt-ico.png" alt="icon" class="social-icon">
               </a>
           </div>
           <div class="media-icon">
@@ -834,17 +613,15 @@ margin-top: 40px;
       <h2 class="heading" id="about">
         ABOUT ME
       </div>
+    
     <div class="sub-heading">
-          I am a recent graduate with strong foundation and passionate about front-end developer.
-          I am currently seeking an opportunity in front-end developer, where I can apply my knowledge,contribute to meaningful projects, grow as a developer.
+          I am a recent graduate with a strong foundation in frontend development and a passion for building responsive, user-friendly web applications. I am currently seeking an opportunity as a Frontend Developer where I can apply my skills, contribute to meaningful projects, and grow as a developer.
         </div>
         <div class="container">
           <div class="container-section">
           <div class="get-to-know">
             <h2 class="knowme">Get to Know me!</h2>
-            <p class="para">Hey! It's Deekshitha Boneni, a passionate <strong>Frontend Developer</strong><br> building clean,responsive,and 
-              user-friendly websites.I specialize <br>in <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong>,buliding 
-              engaging digital experiences.<br>Feelfree to <strong>contact</strong> me here.</p>
+            <p class="para"> Frontend Developer passionate about building responsive and user-friendly web applications. Skilled in HTML, CSS, JavaScript, and React, with a focus on clean code and problem-solving.</p>
             <a href="#cntct"> <button class="contact" >CONTACT</button> </a>
           </div>
           <div class="skills-section">
@@ -852,8 +629,8 @@ margin-top: 40px;
             <div class="skill">HTML</div>
             <div class="skill">CSS</div>
             <div class="skill" style="width:80px">JavaScript</div><br>
-            <div class="skill">ReactJs</div>
-            <div class="skill">Java</div>
+            <div class="skill" style="margin-left: -230px;">ReactJs</div>
+           
           </div>
          </div>
          </div>
@@ -869,14 +646,14 @@ margin-top: 40px;
         </p>
       </div>
     
-     <div class="section">
+    <div class="section">
       <div class="project-img1" >
         <img src="Screenshot 2025-03-09 152753.png"  class="project-image">
         <img src="Screenshot 2025-03-09 152753.png"  class="project-image spaced">
         <img src="Screenshot 2025-03-09 152753.png"   style="width:700px" class="project-image spaced">
 
 
-      </div>
+       </div>
       
       
       <div class="info">
@@ -914,14 +691,14 @@ margin-top: 40px;
                 <a href="casestudy3.html" target="_blank" class="casestudy3">CASE STUDY</a>
               </div>
       </div>
-     </div>
+    </div>
      <div class="con-info">
       <div class="info-desc" id="cntct">
         CONTACT
       </div>
-      <div class="collab">I'm always open to new opportunities,collaboartions, and discussions in frontend development.<br>
+      <div class="collab">I'm always open to new opportunities,collaborations, and discussions in frontend development.<br>
         Feel free to reach out! </div>
-        <div class="detail-info">
+        <form class="detail-info">
           <div class="details">
             <div class="text-name1">
               <h3>Name</h3>
@@ -929,51 +706,55 @@ margin-top: 40px;
             </div>
             <div class="text-name1">
               <h3>Email</h3>
-              <input type="text" placeholder="Enter Your Email" class="enter1">
+              <input type="email" placeholder="Enter Your Email" class="enter1">
             </div>
             <div class="text-name">
               <h3>Message</h3>
-              <input type="text" placeholder="Enter Your Message" class="enter2">
+              <textarea placeholder="Enter Your Message" class="enter2"></textarea>
               
             </div>
           </div>
-          <div class="submit">SUBMIT</div>
+          <button class="submit" onclick="submitForm()">SUBMIT</button>
          </div>
-     </div>
+        </form>
      <div class="footer-section">
       <div class="footer">
         <div class="social">DEEKSHITHA BONENI</div>
         <div class="social-desc">
-          Frontend Developer passionate about creating resposive and user-friendly websites.
+            Frontend Developer focused on building responsive and user-friendly web applications.        
         </div>
-      
       </div>
       <div class="social-section">
         <div class="media">SOCIAL</div>
         <div class="media-icons">
-          <a href="www.linkedin.com/in/deekshitha-boneni-6843b529a">
-            <img src="	https://excelrfs.netlify.app/assets/png/linkedin-ico.png" alt="icon" class="social-icon">
+          <a href="https://www.linkedin.com/in/deekshitha-boneni-6843b529a/">
+            <img src="https://excelrfs.netlify.app/assets/png/linkedin-ico.png" alt="icon" class="social-icon" style="width:30px">
           </a>
           <a href="https://github.com/">
             <img src="https://excelrfs.netlify.app/assets/png/github-ico.png" class="icons1" style="width:30px">
           </a>
-
+        
           <a href="https://www.youtube.com/@bonenideekshitha4520">
             <img src="https://excelrfs.netlify.app/assets/png/yt-ico.png" class="icons1" style="width:30px">
           </a>
           <a href="#">
-            <img src="	https://excelrfs.netlify.app/assets/png/insta-ico.png" class="icons1" style="width:30px">
+            <img src="https://excelrfs.netlify.app/assets/png/insta-ico.png" class="icons1" style="width:30px">
           </a>
           
         </div>
       </div>
-
+      
       <div class="small-footer">
         <div class="sf">
-         
-          © Copyright 2025. Made by<a href="#" target="_blank" href="http://deekshithaboneni/portfolio.html" class="copyrights">  Deekshitha Boneni </a>
+         <hr>
+          © Copyright 2025. Made by<a target="_blank" href="http://deekshithaboneni/portfolio.html" class="copyrights">  Deekshitha Boneni </a>
         </div>
       </div>
-     </div>
+    </div>
+     <script>
+function submitForm(){
+  alert("Message submitted successfully!");
+}
+</script>
   </body>
 </html>

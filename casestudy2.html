@@ -5,33 +5,35 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
-        body{
-  padding:0px;
-  margin: 0px;
+               *{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: 'Segoe UI', sans-serif;
 }
-.header{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height:90px;
 
- 
+/* HEADER */
+.header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 40px;
 }
+
 .profile{
-  display: flex;
- 
+  display:flex;
+  align-items:center;
+  gap:10px;
 }
+
 .img{
-  border-radius: 100px;
-  margin-top: 33px;
-  margin-left: 40px;
-  margin-bottom: 30px;
+  width:50px;
+  height:50px;
+  border-radius:50%;
 }
+
 .img-name{
-  margin-left: 20px;
-  margin-top: 50px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
+  font-weight:bold;
   letter-spacing:1px;
 }
 
@@ -44,128 +46,140 @@
   font-family: Arial, Helvetica, sans-serif;
   font-size: 17px;
   font-weight: bold;
-  margin-top: 40px;
-  margin-bottom: 30px;
+ color: black;
+  margin-bottom: 10px;
 }
-.header-menu:hover{
-  cursor: pointer; 
+
+.header-menu div{
+  cursor:pointer;
+  transition:0.3s;
 }
+
+.header-menu div:hover{
+  color:rgba(0, 0, 0, 0.622);                                                                                                                                   
+}
+.home2,.about2,.projects2,.contact2{
+  color: #333;
+  text-decoration: none;
+}
+/* HERO */
 .home-section{
-      background: linear-gradient(to right, rgba(0, 98, 185, 0.8), rgba(0, 98, 185, 0.8)), url(https://excelrfs.netlify.app/assets/svg/common-bg.svg);
-       height: 550px;
-       margin-left: 0;
-       margin-top: 15px;
-     
-  }
-  .project2{
-   padding-top: 110px;
-   margin-left: 610px;
-   font-size: 55px;
-   overflow-y: scroll;
-   font-family: 'Source Sans Pro', sans-serif;
-   font-weight: bold;
-  letter-spacing: 3px;
-   color: white;
-  }
-  .para1{
-  margin-left: 320px;
-  color: #fff;
-  line-height: 1.6;
-  font-family:  sans-serif;
-  font-size: 20px;
-  margin-top:40px ;
-  }
-  .linkbtn{
-    background: #fff; 
-    border-radius: 5px;
-    margin-left: 650px;
-   padding-top: 20px;
-   padding-bottom: 20px;
-   letter-spacing: 2px;
-   width: 250px;
-   border:none;
-   margin-top: 40px;
-   font-family: sans-serif;
-   font-weight: bold;
-   font-size: 15px;
-  }
-  .img1{
-margin-top: 100px;
-margin-left: 300px;
-  }
-  h2{
-    font-family: 'Source Sans Pro', sans-serif;
-    margin-top: 50px; 
-    margin-left: 430px;
-    font-size: 30px;
-  }
-  .para2{
-    line-height: 1.7;
-    color: grey;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 18px;
-    margin-left: 140px;
-    margin-right: 350px;
-  }
-  .heading{
-    margin-left: 430px;
-    margin-top: 70px;
-  }
+  background-color: #2a5298;
+  color:white;
+  text-align:center;
+  padding:80px 20px;
+  background-size: cover;
+}
+
+.project2{
+  font-size:48px;
+  font-weight:bold;
+  margin-bottom:20px;
+}
+
+.para1{
+  max-width:700px;
+  margin:auto;
+  line-height:1.6;
+}
+
+.linkbtn{
+  margin-top:30px;
+  padding:15px 30px;
+  border:none;
+  background:white;
+  font-weight:bold;
+  cursor:pointer;
+  border-radius:5px;
+  transition:0.3s;
+}
+
+.linkbtn:hover{
+  background:#ddd;
+}
+
+/* IMAGE SECTION */
+.img1{
+  text-align:center;
+  margin-top:60px;
+}
+
+.img1 img{
+  width:80%;
+  max-width:700px;
+  border-radius:10px;
+  box-shadow:0 5px 20px rgba(0,0,0,0.2);
+}
+
+/* CONTENT */
+h2{
+  text-align:center;
+  margin-top:40px;
+}
+
+.para2{
+  max-width:800px;
+  margin:20px auto;
+  line-height:1.7;
+  color:#555;
+  text-align:center;
+}
+
+/* TOOLS */
 .tools{
-font-family: 'Source Sans Pro', sans-serif; 
-margin-left: 430px;
+  text-align:center;
+  margin-top:20px;
 }
+
 .skill{
-background: rgba(153, 153, 153, 0.2);
-border-radius: 5px;
-display:inline-block;
-margin-top: 40px;
-color:grey;
-padding: 15px;
-width:60px;
-text-align: center;
-font-weight: bold;
-margin-right: 15px;
-margin-top: 15px;
+  display:inline-block;
+  padding:10px 15px;
+  margin:5px;
+  background:#eee;
+  border-radius:5px;
+  font-weight:bold;
+}
 
-}
-.overview{
-  font-family: 'Source Sans Pro', sans-serif;
-  margin-left: 140px; 
-}
-.btn1{
-  background: #0062b9;
-  color: #fff;
-   size: 15px;
-   margin-left: 430px;
-   border:none;
+/* BUTTONS */
+.btn1, .btn2{
+  display:inline-block;
+  margin:20px 10px;
+  padding:12px 25px;
+  border-radius:5px;
+  font-weight:bold;
+  cursor:pointer;
+  transition:0.3s;
   
-  } 
-
-  .btn2{
-   border: 2px solid #0062b9;
-   color: #0062b9;
-   size: 15px;
-   margin-left:20px ;
-   background: white;
-  }
-.btn1,.btn2{
-  border-radius: 5px;
-  padding-top: 15px;
-   padding-bottom: 15px;
-   letter-spacing: 2px;
-   width: 180px;
-   margin-top: 30px;
-   font-family: sans-serif;
-   font-weight: bold;
-   font-size: 15px; 
 }
+
+.btn1{
+  background:#2a5298;
+  color:white;
+  border:none;
+  margin-left: 650px;
+}
+
+.btn2{
+  border:2px solid rgba(0, 0, 0, 0.622);
+  color:#2a5298;
+  background:white;
+}
+
+.btn1:hover{
+  background:#333;
+}
+
+.btn2:hover{
+  background:rgba(0, 0, 0, 0.622);
+  color:white;
+}
+
 .footer-section{
 display:grid;
 grid-template-columns: 1fr 1fr;
 background-color: black;
-height:400px;
-margin-top:70px ;
+height:300px;
+
 }
 .footer{
 margin-left: 200px;
@@ -207,15 +221,15 @@ gap: 30px;
 .small-footer{
 text-align: center;
 margin-left: 600px;
-margin-top: 100px;
+margin-top: 50px;
 }
 .sf{
 color:white;
 font-size: 10px;
-width:300px
+width:300px;
+
+
 }
-
-
 .copyrights{
 text-decoration: none;
 color: white;
@@ -223,166 +237,14 @@ font-family: Arial, Helvetica, sans-serif;
 font-size: 12px;
 text-decoration: underline;
 font-weight: bold;
+margin-top: 40px;
 
 }
-.linkbtn:hover,
-.btn1:hover,
-.btn2:hover{
-  cursor: pointer;
+hr{
+  width: 260%;
+   margin: 10px auto;
+   margin-left: -230px;
 }
-
-/* media queries */
-@media screen and (max-width:768px){
-  
-
-  body{
-      padding:0px;
-      margin: 0px;
-      overflow-x: hidden; 
-    }
-    .header{
-      height:20px;
-    }
-  .header-menu{
-    margin-top: 105px;
-    row-gap: 3px;
-    display: grid;
-    margin-left: 110px;
-    font-size: 15px;
-   
-   }
-   .img{
-    margin-top: 105px;
-   }
-   .img-name{
-    margin-top: 121px;
-   }
-   .social-media-icons{
-      display: none;
-    }
-    .home-section{
-        background: linear-gradient(to right, rgba(0, 98, 185, 0.8), rgba(0, 98, 185, 0.8)), url(https://excelrfs.netlify.app/assets/svg/common-bg.svg);
-         height: 520px;
-         margin-top: 0px;
-       
-    }
-    .project2{
-      margin-top: 70px;
-      margin-left: 150px;
-      font-size: 40px;
-    }
-    .para1{
-      width:450px;
-      margin-left: 30px;
-      font-size: 17px;
-    }
-    .linkbtn{
-      margin-left: 120px;
-      width:240px;
-      padding-top: 19px;
-      padding-bottom: 19px;
-    }
-    .img1{
-      margin-left: 0px;
-      margin-top: 70px;
-      display: block;
-    }
-    .img1 img{
-    width:550px;
-    max-width: 100%;
-    margin-left: 0px;
-    max-width: 90%;
-    }
-    .overview {
-      font-size: 25px;
-      margin-top: 20px;
-      margin-left: 25px;
-    }
-  
-    .para2 {
-      width:400px;
-      margin-left: 25px;
-      font-size: 17px;
-      line-height: 1.6;
-    }
-    .heading{
-      margin-left: 25px; 
-      font-size: 25px;
-    }
-    .tools{
-      margin-left: 25px;
-    }
-    h2{
-      margin-left: 25px;
-      font-size: 25px;
-    }
-    .btn1{
-      display: block;
-      margin-left: 25px;
-      width:300px;
-      font-size: 13px;
-    }
-    .btn2{
-      display: block;
-      margin-left: 25px;
-      width:300px;
-      font-size: 13px;
-    }
-    .footer-section{
-  display: block;
-  background-color: black;
-  height:400px;
-  padding-top: 0px;
-  
-  }
-  .footer{
-  margin-left: 0px;
-  
-  }
-  .social{
-  font-size: 16px;
-  margin-left: 40px;
-  padding-top: 60px;
-  
-  }
-  .social-desc{
-    width:400px;
-    margin-left: 40px;
-    font-size: 13px;
-    margin-bottom: 20px;
-  }
-  .media-icons{
-  margin-top: 0px;
-  margin-left: 40px;
-  }
-  .media{
-  margin-left: 40px;
-  font-size: 20px;
-  margin-top: 50px;
-  
-  }
-  .social-section{
-  margin-left: 0px;
-  
-  }
-  .icon1{
-  gap: 30px;
-  }
-  .small-footer{
-  text-align: center;
-  margin-left:0px;
-  
-  }
-  .sf{
-  
-  width:500px;
-  
-  }
-  .copyrights{
-  margin-top: 40px;
-  
-  }
-  }
     </style>
   </head>
   <body>
@@ -394,20 +256,17 @@ font-weight: bold;
         <span class="img-name">DEEKSHITHA</span>
       </div>
      <div class="header-menu">
-        <div class="h1">HOME</div>
-        <div class="h1">ABOUT</div>
-        <div class="h1">PROJECTS</div>
-        <div class="h1">CONTACT</div>
+         <a href="index.html" class="home2" >HOME</a>
+        <a href="index.html#about" class="about2">ABOUT</a>
+        <a href="index.html#projects" class="projects2">PROJECTS</a>
+        <a href="index.html#cntct" class="contact2">CONTACT</a>
      </div>
     </div>
     <div class="home-section">
       <div class="projects">
        <div class="project2">PROJECT 2</div>
         <p class="para1">
-          Photogency is a sleek, responsive website designed for showcasing professional photography services.<br>
-          Built with HTML and CSS, it features a modern gallery, service highlights, and a clean layout to attract<br>
-           clients.
-         The site emphasizes visual appeal and user-friendly navigation.
+          Photogency is a modern and responsive website developed to showcase professional photography services. Built with HTML and CSS, it includes a visually appealing gallery, service highlights, and an intuitive layout, ensuring a seamless and engaging user experience.
          </p>
        <a href="https://euphonious-frangollo-a0b69c.netlify.app/"><button class="linkbtn">LIVE LINK</button></a>              
       </div>
@@ -438,8 +297,7 @@ font-weight: bold;
       <div class="footer">
         <div class="social">DEEKSHITHA BONENI</div>
         <div class="social-desc">
-          Frontend Developer passionate about creating resposive and user-friendly websites.
-        </div>
+Frontend Developer focused on building responsive and user-friendly web applications.        </div>
       
       </div>
       <div class="social-section">
@@ -464,7 +322,7 @@ font-weight: bold;
      
       <div class="small-footer">
         <div class="sf">
-         
+         <hr>
           © Copyright 2025. Made by<a href="#" target="_blank" href="http://deekshithaboneni/portfolio.html" class="copyrights">  Deekshitha Boneni </a>
         </div>
       </div>
